@@ -1,0 +1,7 @@
+kousik@Kousik-MacBook-Air Core % javac -d ./ -cp /Users/kousik/Downloads/junit-4.13.2.jar ./*.java
+kousik@Kousik-MacBook-Air Core % java -cp ./:/Users/kousik/Downloads/hamcrest-core-1.3.jar:/Users/kousik/Downloads/junit-4.13.2.jar org.junit.runner.JUnitCore AppTest
+
+
+
+javac -d ./classfiles/ -cp /Users/kousik/Downloads/junit-4.13.2.jar ./javafiles/*
+java -cp ./classfiles/:/Users/kousik/Downloads/hamcrest-core-1.3.jar:/Users/kousik/Downloads/junit-4.13.2.jar org.junit.runner.JUnitCore javafiles.AppTest
