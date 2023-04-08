@@ -2,6 +2,13 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 
+
+/* Just a cool example
+ * Running this code will wirite 0->9 with step size of 1
+ * but one at a time and replacing the previous content.
+ * Thus it looks like couter from 0->9.
+*/
+
 public class CounterToFile {
     
     public static void startCounter() {
