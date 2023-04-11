@@ -17,6 +17,7 @@ public class AppConfig {
      * i.e. <bean id="triangle" class="com.example.java.Triangle"/>
      * 
      * This follows single ton pattern
+     * Constructor based DI, called by main.
     */
     @Bean
     public Triangle getTriangle(){
@@ -31,6 +32,14 @@ public class AppConfig {
      * One problem here is that this is singleton in nature.
      * All reference in Triangle object of Points will have the same object.
      * cause the mapping here is with return type not variable reference name;
+     * 
+     * Constructor based DI for Point
+     * Setter based DI for Triangle's Point variable because it used
+     * setters of Point variable in Triangle ex:
+     * @Autowired
+        public void setPointA(Point pointA) {
+        this.pointA = pointA;
+        }
     */
     @Bean
     public Point getPoint(){

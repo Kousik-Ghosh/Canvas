@@ -16,7 +16,7 @@ public class BufferedWriterCharacter {
         // bfw.write(arr);
         // bfw.flush();
 
-        /* append works if FileWriter(file, append:true) */
+        /* append works if FileWriter(file, true) */
         bfw.newLine();
         bfw.append('e');
         bfw.flush();
