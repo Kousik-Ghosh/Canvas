@@ -1,2 +1,2 @@
-kousik@Kousik-MacBook-Air Structured-NBT % javac -d ./bin/ -cp ./lib/junit-4.13.2.jar ./src/*.java
-kousik@Kousik-MacBook-Air Structured-NBT % java -cp ./bin/:./lib/junit-4.13.2.jar:./lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore AppTest
+javac -d ./bin/ -cp ./lib/junit-4.13.2.jar ./src/*.java
+java -cp ./bin/:./lib/junit-4.13.2.jar:./lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore AppTest
