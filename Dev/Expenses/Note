@@ -1,0 +1,52 @@
+mysql -u u_app_expenses -pa298a138-9738-11ea-b8fc-0242ac110002
+a298a138-9738-11ea-b8fc-0242ac110002
+
+
+authtoken: 1c3lTFkTfsksSG3063Fe4XO5bfr_6joKcjHANH7oCzzi9c82t
+authtoken: 1cujkzFhOEcJuNCQQu6qeBgVzhu_3VVDQtwuUwb3D55njio5Z
+
+ create table t_expenses (
+     f_expense_uuid      varchar (36) not null primary key,
+     f_expense_date_time datetime     not null,
+     f_expense_name      varchar(35)  not null,
+     f_expense_cost      decimal (6,2)     not null
+     );
+     
+
+
+insert into t_expenses values(uuid(), now(), CONCAT('expense_',lpad(conv(floor(rand()*pow(36,6)), 10, 36), 6, 0)) , RAND()*(100-5)+5 );
+
+
+{
+    "connectionLimit": "10",
+    "host": "localhost",
+    "user": "u_app_expenses",
+    "password": "a298a138-9738-11ea-b8fc-0242ac110002",
+    "database": "db_expenses",
+    "timezone": "ist"
+}
+
+
+
+{
+    "connectionLimit": "10",
+    "host": "localhost",
+    "user": "<your database user name>",
+    "password": "<password>",
+    "database": "<database name>",
+    "timezone": "ist"
+}
+
+---------------------------------------------
+    
+sudo kill -9 `sudo lsof -t -i:80`
+
+----------------------------------------------
+
+To Do 
+    1.  filter 
+            - by month
+            - by year
+            - by date
+    2. on delete confirmation pop up
+
