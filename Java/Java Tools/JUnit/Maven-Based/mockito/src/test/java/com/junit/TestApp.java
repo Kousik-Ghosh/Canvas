@@ -15,12 +15,18 @@ public class TestApp {
 
   @BeforeEach
   void testPreperation(){
+    /* Stub data*/
     ArrayList<Employee> empStub = new ArrayList<Employee>();
     empStub.add(new Employee("A", 100000 ));
     empStub.add(new Employee("B", 1000 ));
     empStub.add(new Employee("C", 100000 ));
 
+    /* Mocking
+     * - Does not care about application logic
+    */
     serviceMock = mock(Service.class);
+
+    /* Subbing */
     when(serviceMock.getEmpFromDB()).thenReturn(empStub);
   }
 
