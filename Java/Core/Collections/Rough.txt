@@ -1,0 +1,12 @@
+// SORTING ARRAY DESC - PRIMITIVE CANT BE SORT SO CONVERT TO INTEGER
+        Integer[] aInt = new Integer[arr.length];
+        Arrays.setAll(aInt, i -> arr[i]);
+        Arrays.sort(aInt, Collections.reverseOrder());
+        print(aInt);
+
+
+        // lexicographically compare for 2 int array
+        // 1,2,3,4,5..  here 2 is lexicographically less than 5
+        // return -ve if a<b | return 0 if a=b | return +ve if a>b lexicographically
+        int lexOrder = Arrays.compare(new int[]{2,1,4}, new int[]{2,3,4});
+        System.out.println("LEX-ORDER: "+lexOrder);
