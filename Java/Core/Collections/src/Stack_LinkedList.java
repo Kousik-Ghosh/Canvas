@@ -54,7 +54,7 @@ public class Stack_LinkedList{
             int value = li.next();
         }
         while (li.hasPrevious()) {
-            int value = li.nextIndex();
+            int value = li.previous();
         }
 
 
