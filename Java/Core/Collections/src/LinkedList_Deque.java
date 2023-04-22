@@ -25,19 +25,16 @@ public class LinkedList_Deque{
         
 
         /* Add */
-        dqueue.offer(1000);
         dqueue.offerFirst(2000);
         dqueue.offerLast(3000);
 
 
         /* get */
-        dqueue.peek(); //head
         dqueue.peekFirst();
         dqueue.peekLast();
         
 
         /* delete */
-        dqueue.poll(); //head
         dqueue.pollFirst();
         dqueue.pollLast();
         

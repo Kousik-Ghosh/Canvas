@@ -26,16 +26,12 @@ public class LinkedList_Stack{
 
         /* Add */
         stack.offer(1000);      //end
-        stack.offerLast(1000);  
-        stack.offerFirst(300);
 
         /* get */
-        stack.peekFirst();
-        stack.peekLast();
+        stack.peekLast();   // end
 
         /* delete */
-        stack.removeFirst();
-        stack.removeLast();
+        stack.pollLast();   // end
 
         /* miscellaneous */
         int         size =  stack.size();

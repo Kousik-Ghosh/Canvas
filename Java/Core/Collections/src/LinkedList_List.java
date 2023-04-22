@@ -25,9 +25,9 @@ public class LinkedList_List{
 
         /* Add */
         int pos = 5;
+        ll.add(pos, 300);
         ll.addFirst(1000);
         ll.addLast(1000);
-        ll.add(pos, 300);
 
 
         

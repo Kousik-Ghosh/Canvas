@@ -25,7 +25,7 @@ public class LinkedList_Queue{
         
 
         /* Add */
-        queue.offer(1000);
+        queue.offer(1000); //end
 
         /* get */
         queue.peek(); //head
