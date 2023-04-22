@@ -7,7 +7,7 @@ import java.util.ListIterator;
 import java.util.Queue;
 
 @SuppressWarnings( value = "unused")
-public class Stack_LinkedList{
+public class LinkedList_Stack{
 
     static LinkedList<Integer> stack = new LinkedList<Integer>();
 

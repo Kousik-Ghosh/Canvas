@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.ListIterator;
 
 @SuppressWarnings( value = "unused")
-public class List_LinkedList{
+public class LinkedList_List{
 
     static LinkedList<Integer> ll = new LinkedList<Integer>();
 
