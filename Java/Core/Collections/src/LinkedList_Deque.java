@@ -47,8 +47,11 @@ public class LinkedList_Deque{
         /* Sort & Search */
         // Not Applicable for DQueue
         
-        /* Iterating */
-        // Backward itteration not applicable.
+        /* Iterating  backwards */
+        Iterator<Integer> descIter = dqueue.descendingIterator();
+        while (descIter.hasNext()) {
+            System.out.print(descIter.next()+" ");
+        }
 
 
         /* Collection to Wrapper-Array */

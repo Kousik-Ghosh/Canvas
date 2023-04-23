@@ -13,11 +13,11 @@ public class Map_HashMap {
         int key = 3;
         String value = "kousik";
 
-        /* Insertion */
+        /* add */
         hashMap.put(key, value);
 
 
-        /* Retriving */
+        /* get */
         value = hashMap.get(key);
 
         for(Map.Entry<Integer,String> entry : hashMap.entrySet()) {
@@ -33,7 +33,7 @@ public class Map_HashMap {
         }
 
 
-        /* Deletion */
+        /* delete */
         hashMap.remove(key);
         hashMap.remove(key, value);
 
