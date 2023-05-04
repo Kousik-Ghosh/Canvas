@@ -1,3 +1,4 @@
+import java.util.ArrayDeque;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Deque;
@@ -7,9 +8,9 @@ import java.util.ListIterator;
 import java.util.Queue;
 
 @SuppressWarnings( value = "unused")
-public class LinkedList_Deque{
+public class Queue_Deque{
 
-    static Deque<Integer> dqueue = new LinkedList<Integer>();
+    static Deque<Integer> dqueue = new ArrayDeque<Integer>();
 
     static void run(){  
         /* Array to Collections */

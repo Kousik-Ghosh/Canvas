@@ -5,33 +5,32 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.ListIterator;
 import java.util.Queue;
+import java.util.Stack;
 
 @SuppressWarnings( value = "unused")
-public class LinkedList_Stack{
+public class List_Stack{
 
-    static LinkedList<Integer> stack = new LinkedList<Integer>();
+    static Stack<Integer> stack = new Stack<Integer>();
 
     static void run(){  
         /* Array to Collections */
         int[] arrInt = new int[]{4,5,33,56,99,167};
         for (int i : arrInt) {
-            stack.offer(i);
+            stack.push(i);
         }
         stack.clear();
 
         /* Wrapper-Array to Collections */
-        Integer[] arrInteger = new Integer[]{45,2,44,222,567,67,0,56,1};
-        stack = new LinkedList<Integer>(Arrays.asList(arrInteger));
-        
+        // NA - not defined
 
         /* Add */
-        stack.offer(1000);      //end
+        stack.push(1000);      //end
 
         /* get */
-        stack.peekLast();   // end
+        stack.peek();   // top
 
         /* delete */
-        stack.pollLast();   // end
+        stack.pop();   // top
 
         /* miscellaneous */
         int         size =  stack.size();
@@ -55,7 +54,7 @@ public class LinkedList_Stack{
 
 
         /* Collection to Wrapper-Array */
-        arrInteger = new Integer[stack.size()];
+        Integer[] arrInteger = new Integer[stack.size()];
         stack.toArray(arrInteger);
 
         /* Collection to Array */

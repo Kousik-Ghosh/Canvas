@@ -4,6 +4,7 @@
         arr.clone();
         Arrays.sort(arr);
         Arrays.sort(arr, (first, second) -> first[index] - second[index]);
+        Arrays.sort(arr, (a, b)->a[0]==b[0]? a[1]-b[1]:a[0]-b[0]);
 
 
 

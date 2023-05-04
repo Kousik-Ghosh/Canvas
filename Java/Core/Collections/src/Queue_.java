@@ -6,7 +6,7 @@ import java.util.ListIterator;
 import java.util.Queue;
 
 @SuppressWarnings( value = "unused")
-public class LinkedList_Queue{
+public class Queue_{
 
     static Queue<Integer> queue = new LinkedList<Integer>();
 
