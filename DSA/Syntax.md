@@ -16,21 +16,6 @@
         sb.append("hello");
 
 
-
-        for(Map.Entry<String, Integer> me : hm.entrySet()){
-                me.getKey();
-                me.getValue();
-        }
-
-
-
-        Iterator<Integer> it = arrList.iterator();
-        while(it.hasNext()){
-                it.next();
-        }
-
-
-
         Collections.sort(list);
         Collections.sort(list, Comparator.reverseOrder());
         Collections.binarySearch(list, element);

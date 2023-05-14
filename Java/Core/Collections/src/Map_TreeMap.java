@@ -7,9 +7,11 @@ import java.util.TreeMap;
 @SuppressWarnings(value = "unused")
 class Map_TreeMap{
 
-    /* Internal Implementaion is Binary Search tree 
-     * Default traversal  DFS:In-Order.
-    */
+    /* BST 
+     * add, remove, and search -> O(log(n))
+     * Iterator: NA
+     * (key,value)
+     */
     static TreeMap<Integer, String> treeMap = new TreeMap<>();
     static void run(){
 

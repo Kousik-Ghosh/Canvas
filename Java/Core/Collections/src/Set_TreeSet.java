@@ -3,9 +3,11 @@ import java.util.Iterator;
 import java.util.TreeSet;
 
 
-/* self-balancing binary search tree
- * 
-*/
+/* BST 
+ * add, remove, and search -> O(log(n))
+ * Iterator: In-order
+ * Duplicate - not allowed
+ */
 public class Set_TreeSet {
 
     static TreeSet<Integer> ts = new TreeSet<>();
