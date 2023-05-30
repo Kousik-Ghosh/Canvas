@@ -3,30 +3,23 @@ public class Leet {
    public static void main(String[] args) {
     
          
-      
-        
-      System.out.println(Integer.toBinaryString(5));
-      System.out.println(Integer.toBinaryString(25));
-      System.out.println(Integer.toBinaryString(125));
-      System.out.println(Integer.toBinaryString(625));
+      long x = 1096396827279023640l;
+      int y = 1231676767;
 
-      System.out.println(cuts("1111101"));
+      String bid = "1096396827279023640";
+      
+
+      long res = 0;
+ 
+        // One by one process all digits of 'num'
+        for (int i = 0; i < bid.length(); i++){
+            res = (res * 10 + bid.charAt(i) - '0') % 4;
+        }
+
+        System.out.println(res);
+        System.out.println(x % 256);
+        System.out.println(y % 256);
 
    }
 
-   static int cuts(String s)
-    {
-      int ans = 0;
-        int x = 0;
-        for (int i = 1; i < s.length(); i++) {
-            x = Integer.parseInt(s.substring(0, i), 2);
-            if(x != 0){
-               int n = (int)(Math.log(x) / Math.log(5));
-               if(Math.pow(5, n) == x){
-                  ans =  s.length() / i;
-               }
-            }
-        }
-        return ans == 0 ? -1 : ans;
-    }
 }
