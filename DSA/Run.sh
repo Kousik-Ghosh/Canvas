@@ -1,2 +1,2 @@
 javac *.java
-time java Leet
+time java Problem
