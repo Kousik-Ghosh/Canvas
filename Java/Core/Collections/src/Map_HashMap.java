@@ -1,5 +1,8 @@
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 @SuppressWarnings( value = "unused")
 public class Map_HashMap {
@@ -31,6 +34,8 @@ public class Map_HashMap {
             value = y;
         }
 
+        Set<Integer> k = hashMap.keySet();
+        Collection<String> v = hashMap.values();
 
         /* delete */
         hashMap.remove(key);

@@ -8,7 +8,7 @@ import java.util.Queue;
 import java.util.Stack;
 
 @SuppressWarnings( value = "unused")
-public class List_Stack{
+public class Stack_{
 
     static Stack<Integer> stack = new Stack<Integer>();
 
