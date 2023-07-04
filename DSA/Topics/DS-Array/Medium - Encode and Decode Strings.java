@@ -1,6 +1,5 @@
 /* https://leetcode.com/problems/encode-and-decode-strings/ */
 
-/* https://leetcode.com/problems/product-of-array-except-self/description/ */
 class Solution {
 
     public String encode(List<String> strs) {
