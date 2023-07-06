@@ -33,3 +33,12 @@ class Solution {
 
     }
 }
+
+/* put input array into hashset
+ * for each value check whether value-1 exists
+ *      if does not, it means it is the start element
+ *          from where on, incriment by 1,check in hashset whether it exists
+ *          and keep count
+ * 
+ * return max count
+*/

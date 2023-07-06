@@ -1,3 +1,5 @@
+/* https://leetcode.com/problems/two-sum/ */
+
 class Solution {
     public int[] twoSum(int[] nums, int target) {
             
@@ -19,3 +21,9 @@ class Solution {
     return null;
 }
 }
+
+/* 
+ * Since asking for index, put array into map (arr[i],i)
+ * loop for each value
+ *      check for (target-arr[i]) exists or not in map where value!=i
+*/

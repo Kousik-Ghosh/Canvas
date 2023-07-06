@@ -33,3 +33,11 @@ class Solution {
 
     }
 }
+
+
+/* 
+ * For each string in input, create a int array of size 26 and set position for each character
+ * like for cat -> [1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0]
+ * covert it into string   "String cks = new String(Arrays.toString(charArr))"
+ * put it into HashMap<String, ArrayList<String>> as like this (cks, current string)
+*/

@@ -1,13 +1,17 @@
-class Solution{
+/* https://leetcode.com/problems/valid-perfect-square/ */
 
+class Solution {
     public boolean isPerfectSquare(int num) {
         
+       if(num == 1){
+           return true;
+       }
+        
        long left = 1;
-       long right = Integer.MAX_VALUE/2;
+       long right = num/2;
 
        while(left <= right){
            long mid = left+((right-left)/2);
-           System.out.println(mid);
            if(mid*mid == num){
                return true;
            }
@@ -21,5 +25,4 @@ class Solution{
 
 
     }
-    
 }

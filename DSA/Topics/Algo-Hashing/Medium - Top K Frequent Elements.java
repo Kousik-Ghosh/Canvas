@@ -31,3 +31,12 @@ class Solution {
 
     }
 }
+
+
+/* best approach is a version of bucket sort
+ * 
+ * But above simply count each occurance in hashmap
+ * convert hashmap to 2-d array
+ * sort descinding order on coloum 2
+ * retun till k of first coloum
+*/

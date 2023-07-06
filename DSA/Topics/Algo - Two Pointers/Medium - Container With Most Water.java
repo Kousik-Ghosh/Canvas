@@ -22,3 +22,9 @@ class Solution {
 
     }
 }
+
+
+/* 
+ * Intuitive idea is 2 pointer start and end
+ * which ever is smaller incriment that and calculate water holding capacity
+*/

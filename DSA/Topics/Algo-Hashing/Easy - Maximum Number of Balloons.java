@@ -1,3 +1,5 @@
+/* https://leetcode.com/problems/maximum-number-of-balloons/ */
+
 class Solution {
     public int maxNumberOfBalloons(String text) {
         
@@ -32,3 +34,10 @@ class Solution {
 
     }
 }
+
+/* 
+ * Count the number of all characters
+ * get min of count of "b","a","n"
+ * get min of count of "l"/2, "o"/2
+ * return min of above twos.
+*/

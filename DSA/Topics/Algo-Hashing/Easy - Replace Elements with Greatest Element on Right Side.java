@@ -1,3 +1,5 @@
+/* https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side/ */
+
 class Solution {
     public int[] replaceElements(int[] arr) {
 
@@ -18,3 +20,8 @@ class Solution {
         return ans;
     }
 }
+
+/* 
+ * Loop through the array starting from the end.
+ * Keep the maximum value seen so far.
+*/

@@ -3,21 +3,20 @@
 class Solution {
     public void moveZeroes(int[] nums) {
         
-        int start = 0;
-        int end = nums.length - 1;
+        int insert = 0;
+        int runner = 0;
 
-        while(start < end){
+        while(runner < nums.length){
             
-            if(nums[start] == 0){
-                for(int i = start; i < nums.length-1; i++){
-                    nums[i] = nums[i+1];
-                }
-                nums[end] = 0;
-                end--;
-            }else{
-                start++;
+            if(nums[runner] != 0){
+                int temp = nums[insert];
+                nums[insert] = nums[runner];
+                nums[runner] = temp;
+                insert++;
             }
+            runner++;
 
+            
         }
 
 

@@ -68,3 +68,11 @@ class Solution {
     }
 
 }
+
+/* check for each row
+ * check for each coloumn
+ * check for each grid
+ *      -   separate method->(block_start, block_end, arr)      
+ *              loop(block_start->block_start+3)
+ *                  loop(block_end->block_end+3)
+*/
