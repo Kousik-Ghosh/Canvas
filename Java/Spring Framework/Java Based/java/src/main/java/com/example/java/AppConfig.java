@@ -16,7 +16,7 @@ public class AppConfig {
      * for the class="com.example.java.Triangle"
      * i.e. <bean id="triangle" class="com.example.java.Triangle"/>
      * 
-     * This follows single ton pattern
+     * This follows singleton pattern
      * Constructor based DI, called by main.
     */
     @Bean
