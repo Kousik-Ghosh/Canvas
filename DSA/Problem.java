@@ -1,6 +1,4 @@
 import java.util.ArrayDeque;
-import java.util.HashMap;
-import java.util.HashSet;
 
 public class Problem {
    public static void main(String[] args) {
@@ -24,22 +22,9 @@ public class Problem {
       queue.removeLast();
 
 
-      String s = "kousik";
-
-      if(s.charAt(0) == 'k'){
-         System.out.println(true);
-      }else{
-         System.out.println(false);
-      }
-
-
-      char[] stack11 = new char[100000];
-      String dd = new String(stack11).substring(2,3);
-
-
-
-    
-
+      
 
    }
+
+
 }
