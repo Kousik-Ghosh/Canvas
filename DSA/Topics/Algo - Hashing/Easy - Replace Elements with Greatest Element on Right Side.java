@@ -19,6 +19,23 @@ class Solution {
 
         return ans;
     }
+
+    // 2nd way of solving
+    public int[] replaceElements2(int[] arr) {
+        
+        int length = arr.length;
+        int[] ans = new int[length];
+        int max = arr[length-1];
+        int pointer = length-1;
+        ans[pointer] = -1;
+        while(length - 1 > 0){
+         max = max > arr[pointer] ? max : arr[pointer];
+            ans[length-2] = max;
+            pointer--;
+            length--;
+        }
+        return ans;
+    }
 }
 
 /* 
