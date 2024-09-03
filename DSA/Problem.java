@@ -8,6 +8,10 @@ class Problem{
       
        LinkedList<Integer> ll = new LinkedList<>();
        System.out.println(ll.getClass().getName());
+
+
+
+       
       
     }
 }
