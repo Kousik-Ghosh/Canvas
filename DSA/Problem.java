@@ -1,11 +1,13 @@
+import java.util.Deque;
 import java.util.HashMap;
+import java.util.LinkedList;
 
 class Problem{
 
     public static void main(String[] args) {
       
-       HashMap<Integer, Integer> hs = new HasMap<Integer, Integer>();
-        hs.containsKey(hs)
+       LinkedList<Integer> ll = new LinkedList<>();
+       System.out.println(ll.getClass().getName());
       
     }
 }
