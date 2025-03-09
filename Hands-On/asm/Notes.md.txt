@@ -1,0 +1,3 @@
+g++ <file>.cpp -o <file>
+
+objdump -D <file>.exe > asm.txt
